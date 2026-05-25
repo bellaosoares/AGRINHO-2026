@@ -1,0 +1,296 @@
+/* Configuração de Fontes e Reset Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5E6CC; /* Bege claro (Fundo principal) */
+    color: #333333;
+}
+
+h1, h2, h3, .navbar .logo {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Paleta de Cores Aplicada */
+:root {
+    --verde-escuro: #2E7D32;
+    --verde-claro: #66BB6A;
+    --bege-claro: #F5E6CC;
+    --branco: #FFFFFF;
+    --marrom-suave: #8D6E63;
+    --azul-claro: #4FC3F7;
+}
+
+/* Cabeçalho fixo */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: var(--verde-claro);
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(46, 125, 50, 0.75), rgba(141, 110, 99, 0.6)), 
+                url('https://images.unsplash.com/photo-1592982537447-7440771109a2?q=80&w=1920') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--branco);
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.hero .slogan {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: var(--verde-claro);
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.hero .objetivo {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.btn-main {
+    background-color: var(--verde-claro);
+    color: var(--branco);
+    text-decoration: none;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.btn-main:hover {
+    background-color: #52a756;
+    transform: translateY(-2px);
+}
+
+/* Estrutura das Seções */
+.section-padding {
+    padding: 80px 8%;
+}
+
+.section-alt {
+    background-color: rgba(255, 255, 255, 0.4); /* Leve variação no fundo bege */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--verde-escuro);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* Grid de Cards */
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--branco);
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos de Cores dos Ícones com base nos dados */
+.icon-green { color: var(--verde-escuro); }
+.icon-blue { color: var(--azul-claro); }
+.icon-brown { color: var(--marrom-suave); }
+
+.card h3 {
+    font-size: 1.25rem;
+    color: #222222;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.highlight-danger {
+    border-top: 4px solid var(--marrom-suave);
+}
+
+/* Formulário de Contato */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background-color: var(--branco);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    outline: none;
+    border-color: var(--verde-escuro);
+}
+
+.btn-submit {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    border: none;
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #1e5221;
+}
+
+/* Seção Conclusão */
+.conclusion-section {
+    background-color: var(--marrom-suave);
+    color: var(--branco);
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.conclusion-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.conclusion-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.conclusion-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade (Ajustes para celular) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+    .hero .slogan {
+        font-size: 1.3rem;
+    }
+    .section-padding {
+        padding: 50px 5%;
+    }
+}
