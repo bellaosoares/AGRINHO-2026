@@ -128,3 +128,8 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+.sua-classe-da-imagem {
+    /* Gira a imagem em 90 graus no sentido horário */
+    transform: rotate(90deg); 
+}
