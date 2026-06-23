@@ -403,3 +403,7 @@ canvas{
     width: 80%;
     border-radius: 10px;
 }
+
+body {
+  background-color: red;
+}
