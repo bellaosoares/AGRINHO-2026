@@ -1,119 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Sustentável</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Sustentável</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
-    <div class="logo">🌱 Agro Sustentável</div>
+  <h1>Agro Sustentável</h1>
+  <p>“Produzir hoje preservando o amanhã.”</p>
 
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#producao">Produção</a>
-        <a href="#sustentabilidade">Sustentabilidade</a>
-        <a href="#solucoes">Soluções</a>
-        <a href="#contato">Contato</a>
-    </nav>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#producao">Produção</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#desafios">Desafios</a>
+    <a href="#solucoes">Soluções</a>
+    <a href="#contato">Contato</a>
+  </nav>
 </header>
 
-<!-- HERO -->
 <section id="inicio" class="hero">
-    <div class="hero-text">
-        <h1>Produzir hoje preservando o amanhã</h1>
-        <p>Um espaço educativo sobre agronegócio sustentável e inovação no campo.</p>
-        <a class="btn" href="#solucoes">Ver soluções</a>
-    </div>
+  <div class="hero-text">
+    <h2>Bem-vindo ao Agro Sustentável</h2>
+    <p>Tecnologia, produção e preservação ambiental trabalhando juntos.</p>
+    <button onclick="scrollToSection('producao')">Explorar</button>
+  </div>
 
-    <img src="./assets/agro1.png" alt="Agricultura sustentável">
+  <img src="assets/imagem%20agro%201.png" alt="Agricultura">
 </section>
 
-<!-- PRODUÇÃO -->
-<section id="producao">
-    <h2>Produção Agrícola</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>Importância Econômica</h3>
-            <p>Gera empregos, renda e garante segurança alimentar no Brasil.</p>
-        </div>
-
-        <div class="card">
-            <h3>Crescimento do Agro</h3>
-            <p>O Brasil é um dos maiores exportadores de alimentos do mundo.</p>
-        </div>
-
-        <div class="card">
-            <h3>Tecnologia</h3>
-            <p>GPS, sensores e automação aumentam a produtividade no campo.</p>
-        </div>
-    </div>
+<section id="producao" class="section">
+  <h2>Produção Agrícola</h2>
+  <div class="card">
+    <p>O agronegócio é um dos principais setores da economia brasileira.</p>
+    <p>A agricultura de precisão utiliza GPS e sensores para aumentar a eficiência.</p>
+  </div>
 </section>
 
-<!-- SUSTENTABILIDADE -->
-<section id="sustentabilidade">
-    <h2>Sustentabilidade</h2>
+<section id="sustentabilidade" class="section alt">
+  <h2>Sustentabilidade</h2>
+  <div class="grid">
+    <div class="card">Conservação do solo</div>
+    <div class="card">Irrigação inteligente</div>
+    <div class="card">Energia solar e eólica</div>
+  </div>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Preservação</h3>
-            <p>Proteção do solo, água e biodiversidade.</p>
-        </div>
-
-        <div class="card">
-            <h3>Rotação de Culturas</h3>
-            <p>Melhora a qualidade do solo e reduz pragas.</p>
-        </div>
-
-        <div class="card">
-            <h3>Uso da Água</h3>
-            <p>Irrigação inteligente evita desperdícios.</p>
-        </div>
-    </div>
+  <img src="assets/imagem%20painel%20solar.png" alt="Painel Solar">
 </section>
 
-<!-- SOLUÇÕES -->
-<section id="solucoes">
-    <h2>Soluções Inovadoras</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>Bioinsumos</h3>
-            <p>Controle natural de pragas sem prejudicar o meio ambiente.</p>
-        </div>
-
-        <div class="card">
-            <h3>ILPF</h3>
-            <p>Integra lavoura, pecuária e floresta no mesmo espaço.</p>
-        </div>
-
-        <div class="card">
-            <h3>Energias Limpas</h3>
-            <p>Energia solar e biomassa no campo.</p>
-        </div>
-    </div>
-
-    <img class="full-img" src="./assets/agro2.png" alt="Produção sustentável">
+<section id="desafios" class="section">
+  <h2>Desafios Ambientais</h2>
+  <div class="card">
+    <p>Desmatamento, uso da água e emissão de carbono são grandes desafios ambientais.</p>
+  </div>
 </section>
 
-<!-- CONTATO -->
-<section id="contato">
-    <h2>Contato</h2>
+<section id="solucoes" class="section alt">
+  <h2>Soluções e Futuro</h2>
+  <div class="grid">
+    <div class="card">Agricultura regenerativa</div>
+    <div class="card">Drones agrícolas</div>
+    <div class="card">Tecnologia sustentável</div>
+  </div>
 
-    <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+  <img src="assets/imagem%20drone.png" alt="Drone agrícola">
+</section>
+
+<section id="contato" class="section">
+  <h2>Contato</h2>
+
+  <form>
+    <input type="text" placeholder="Seu nome" required>
+    <input type="email" placeholder="Seu email" required>
+    <textarea placeholder="Sua mensagem"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
 </section>
 
 <footer>
-    <p>© 2026 Agro Sustentável</p>
+  <p>© 2026 Agro Sustentável - Projeto educativo</p>
 </footer>
 
 <script src="script.js"></script>
